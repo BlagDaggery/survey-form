@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Spades Tournament Registration | BlagDaggery</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <section id="main">
+      <header>
+        <h1 id="title">Spades Tounrament!</h1>
+        <p id="description">Please fill out the form to register.</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-item">
+          <label id="name-label" for="name">Name:</label>
+          <input required type="text" id="name" name="name" placeholder="First Name & Last Name" />
+        </div>
+        <div class="form-item">
+          <label id="email-label" for="email">Email:</label>
+          <input required type="email" id="email" name="email" placeholder="youremail@example.com" />
+        </div>
+        <div class="form-item">
+          <label id="number-label" for="number">How many months have you been playing Spades?</label>
+          <input type="number" id="number" name="number" min="1" max="1200" placeholder="Min: 1, Max: 1,200" />
+        </div>
+        <div class="form-item">
+          <fieldset>
+            <legend>How would you describe your skill level?</legend>
+            <label for="skill_1">
+              <input type="radio" name="skill_level" id="skill_1" value="none">What is a Spade?
+            </label>
+            <label for="skill_2">
+              <input type="radio" name="skill_level" id="skill_2" value="beginner">Beginner
+            </label>
+            <label for="skill_3">
+              <input type="radio" name="skill_level" id="skill_3" value="intermediate">Intermediate
+            </label>
+            <label for="skill_4">
+              <input type="radio" name="skill_level" id="skill_4" value="advanced">Advanced
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-item">
+            <label for="dropdown">How would you like partner selection to work?</label>
+            <select id="dropdown" name="partner_preference">
+              <option value="random">Assign everyone a random partner</option>
+              <option value="chosen">Let people pick their own partner</option>
+              <option value="hybrid">Let some people pick & randomly assign the rest</option>
+            </select>
+        </div>
+        <div class="form-item">
+          <fieldset>
+            <legend>Please select what you will be bringing to the tournament:</legend>
+            <label for="contribution_1">
+              <input type="checkbox" name="contribution" id="contribution_1" value="snacks">Snacks
+            </label>
+            <label for="contribution_2">
+              <input type="checkbox" name="contribution" id="contribution_2" value="drink">Drinks
+            </label>
+            <label for="contribution_3">
+              <input type="checkbox" name="contribution" id="contribution_3" value="cards">A Deck of Cards
+            </label>
+            <label for="contribution_4">
+              <input type="checkbox" name="contribution" id="contribution_4" value="good_attitude">A Sunny Disposition
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-item">
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments">Type your comments here...</textarea>
+        </div>
+        <div class="form-item">
+          <button id="submit" type="submit">Deal Me In!</button>
+        </div>
+        <div></div>
+      </form>
+    </section>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #2a2d34;
+}
+
+#title {
+  color: #93dc28;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#description {
+  color: #fff;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+
+#main {
+  max-width: 400px;
+  margin: auto;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+}
+
+fieldset {
+  margin-top: 15px;
+  border-color: #2a2d34;
+}
+
+.form-item {
+  margin: 10px auto;
+}
+
+input[type=text], input[type=number], input[type=email], select, textarea, button {
+  width: 100%;
+}
