@@ -13,15 +13,15 @@
       <form id="survey-form">
         <div class="form-item">
           <label id="name-label" for="name">Name:</label>
-          <input required type="text" id="name" name="name" />
+          <input required type="text" id="name" name="name" placeholder="First Name & Last Name" />
         </div>
         <div class="form-item">
           <label id="email-label" for="email">Email:</label>
-          <input required type="email" id="email" name="email" />
+          <input required type="email" id="email" name="email" placeholder="youremail@example.com" />
         </div>
         <div class="form-item">
           <label id="number-label" for="number">Number Field:</label>
-          <input type="number" id="number" name="number" />
+          <input type="number" id="number" name="number" min="1" max="100" placeholder="Min: 1, Max: 100" />
         </div>
         <div class="form-item">
           <fieldset>
@@ -35,8 +35,8 @@
           </fieldset>
         </div>
         <div class="form-item">
-            <label for="select_list">Select List Aw Yeah!</label>
-            <select id="select_list" name="select_list_choice">
+            <label for="dropdown">Select List Aw Yeah!</label>
+            <select id="dropdown" name="dropdown">
               <option value="select_1">Select 1</option>
               <option value="select_2">Select 2</option>
               <option value="select_3">Select 3</option>
